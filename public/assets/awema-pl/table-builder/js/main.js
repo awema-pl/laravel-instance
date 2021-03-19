@@ -1,6 +1,6 @@
 /**
  * Bundle of AWEMA table-builder
- * Generated: 2020-11-14 23:36:00
+ * Generated: 2021-01-13 11:48:35
  * Version: 1.3.0
  */
 

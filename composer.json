@@ -8,14 +8,19 @@
     ],
     "license": "MIT",
     "require": {
+        "php": "^7.3",
+        "ext-json": "*",
         "awema-pl/module-allegro": "@dev",
+        "awema-pl/module-allegro-client": "@dev",
         "awema-pl/module-assets": "@dev",
         "awema-pl/module-auth": "@dev",
         "awema-pl/module-awema-spa": "@dev",
-        "awema-pl/module-chromator": "@dev",
-        "awema-pl/module-baselinker": "@dev",
+        "awema-pl/module-background": "@dev",
         "awema-pl/module-base-js": "@dev",
+        "awema-pl/module-baselinker": "@dev",
+        "awema-pl/module-baselinker-client": "@dev",
         "awema-pl/module-chart-builder": "@dev",
+        "awema-pl/module-chromator": "@dev",
         "awema-pl/module-context-menu": "@dev",
         "awema-pl/module-docs": "@dev",
         "awema-pl/module-filter-wrapper": "@dev",
@@ -27,11 +32,15 @@
         "awema-pl/module-packaginator": "@dev",
         "awema-pl/module-page-map": "@dev",
         "awema-pl/module-permission": "@dev",
+        "awema-pl/module-prestashop": "@dev",
         "awema-pl/module-printer": "@dev",
+        "awema-pl/module-product-integrator": "@dev",
         "awema-pl/module-psmoduler": "@dev",
+        "awema-pl/module-task": "@dev",
         "awema-pl/module-repository": "@dev",
         "awema-pl/module-starter": "@dev",
         "awema-pl/module-sticky-params": "@dev",
+        "awema-pl/module-storage": "@dev",
         "awema-pl/module-subscription": "@dev",
         "awema-pl/module-system-notify": "@dev",
         "awema-pl/module-tab-builder": "@dev",
@@ -39,17 +48,22 @@
         "awema-pl/module-theme-switcher": "@dev",
         "awema-pl/module-virtual-tour": "@dev",
         "awema-pl/module-wiki": "@dev",
+        "awema-pl/module-xml": "@dev",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
-        "php": "^7.3",
         "zanysoft/laravel-zip": "^1.0",
-        "ext-json": "*"
+        "ext-xmlreader": "*",
+        "ext-libxml": "*",
+        "ext-simplexml": "*",
+      "ext-curl": "*",
+        "ext-fileinfo": "*"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
+        "beyondcode/laravel-dump-server": "^1.7",
         "facade/ignition": "^2.3.6",
         "fzaninotto/faker": "^1.9.1",
         "mockery/mockery": "^1.3.1",
@@ -81,9 +95,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "pre-update-cmd": [
-            ""
-        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -99,6 +110,13 @@
         {
             "type": "path",
             "url": "../Modules/Allegro",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Modules/Allegro-client",
             "options": {
                 "symlink": true
             }
@@ -133,6 +151,13 @@
         },
         {
             "type": "path",
+            "url": "../Modules/Background",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "../Modules/Base-js",
             "options": {
                 "symlink": true
@@ -141,6 +166,13 @@
         {
             "type": "path",
             "url": "../Modules/Baselinker",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Modules/Baselinker-client",
             "options": {
                 "symlink": true
             }
@@ -224,6 +256,13 @@
         },
         {
             "type": "path",
+            "url": "../Modules/Prestashop",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "../Modules/Permission",
             "options": {
                 "symlink": true
@@ -231,7 +270,21 @@
         },
         {
             "type": "path",
+            "url": "../Modules/Product-integrator",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "../Modules/Psmoduler",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Modules/Task",
             "options": {
                 "symlink": true
             }
@@ -267,6 +320,13 @@
         {
             "type": "path",
             "url": "../Modules/Subscription",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Modules/Storage",
             "options": {
                 "symlink": true
             }
@@ -309,6 +369,13 @@
         {
             "type": "path",
             "url": "../Modules/Wiki",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Modules/Xml",
             "options": {
                 "symlink": true
             }
